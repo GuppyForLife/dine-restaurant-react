@@ -1,38 +1,60 @@
+:root {
+  --primary-beaver: #9e7f66;
+  --primary-cod-gray: #111111;
+  --secondary-mirage: #17192b;
+  --secondary-ebony-clay: #242b37;
+  --secondary-shuttle-gray: #5c6779;
+}
+
 .App {
-  text-align: center;
+  font-family: 'League Spartan';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-hero {
+  background-image: url("../public/assets/homepage/hero-bg-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-text {
+  color: white;
+  padding-left: 10rem;
+  max-width: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home-header {
+  font-weight: 250;
+  font-size: 80px;
+  letter-spacing: -1px;
+  line-height: 1;
+  padding-top: 15rem;
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.book-button {
+  padding: 1rem 3rem;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  background-color: var(--primary-cod-gray);
+  border: 0.12px solid white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book-button-row {
+  width: 15rem;
+  padding-bottom: 15rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-button:hover {
+  background-color: white;
+  color: black;
 }
